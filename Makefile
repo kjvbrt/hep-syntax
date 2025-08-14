@@ -1,4 +1,4 @@
-all: pythia8 ftdetect-pythia8 dec ftdetect-dec
+all: pythia8 ftdetect-pythia8 dec ftdetect-dec sin ftdetect-sin
 
 pythia8: pythia8.vim
 	@mkdir -p ${HOME}/.config/nvim/syntax
@@ -15,3 +15,11 @@ dec: dec.vim
 ftdetect-dec: ftdetect-dec.vim
 	@mkdir -p ${HOME}/.config/nvim/ftdetect
 	@cp ftdetect-dec.vim ${HOME}/.config/nvim/ftdetect/
+
+sin: sin.vim
+	@mkdir -p ${HOME}/.config/nvim/syntax
+	@cp sin.vim ${HOME}/.config/nvim/syntax/
+
+ftdetect-sin: ftdetect-sin.vim
+	@mkdir -p ${HOME}/.config/nvim/ftdetect
+	@cp ftdetect-sin.vim ${HOME}/.config/nvim/ftdetect/
